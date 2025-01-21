@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>Positions | Optelion AI</title>
+    <meta name="description" content="Optelion AI Leverage" />
+    <meta name="title" content="Optelion AI Leverage" />
+    <meta name="keywords" content="Optelion AI Leverage" />
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/update/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/update/logo.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--=== Add By Designer ===-->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="fonts/fonts.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="css/all.min.css" rel="stylesheet" />
+    <link href="./pp.css" rel="stylesheet" />
+    <!--=== Windows Phone JS Code Start ===-->
+    <script type="text/javascript">
+      if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement("style");
+        msViewportStyle.appendChild(
+          document.createTextNode("@-ms-viewport{width:auto!important}")
+        );
+        document.querySelector("head").appendChild(msViewportStyle);
+      }
+    </script>
+    <!--=== Windows Phone JS Code End ===-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="h-content">
+          <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand" href="/"
+              ><img
+                src="/update/header-logo.png"
+                alt="logo"
+                class="img-fluid lazy"
+            /></a>
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-content"
+            >
+              <div class="hamburger-toggle">
+                <div class="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Open Positons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Trade</a>
+                </li>
+              </ul>
+              <div class="h-connect-wallet-button">
+                <a
+                  class="btn btn-parrot"
+                  onclick="connectWallet()"
+                  id="connectedAccount"
+                  role="button"
+                  >Connect Wallet</a
+                >
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- content start -->
+    <div class="content">
+      <!-- live-streaming -->
+      <div class="live-streaming-section">
+        <div class="container-fluid">
+          <div class="live-streaming-description">
+            <div class="live-streaming-list">
+              <div class="live-streaming-block leverage-eth-dropdown-block">
+                <div class="country-amount-dropdown">
+                  <div class="dropdown country-money-dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="images/t-logo.png"
+                        alt="t-logo"
+                        class="img-fluid lazy"
+                        id="myImage"
+                        style="border-radius: 50%"
+                      />
+                      <span class="dropdown-text" id="myHeading">OPTIMUS</span>
+                    </button>
+
+                    <ul class="dropdown-menu">
+                      <div class="search-country-money-filter">
+                        <input
+                          class="form-control search-country-field"
+                          type="text"
+                          placeholder="Search"
+                        />
+                        <a href="#" class="filter-close"></a>
+                      </div>
+
+                      <!--ZKML-->
+                      <li onclick="updateHeadingAndVariable('zkml5x')">
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./zkml.png"
+                            alt="t-logo"
+                            class="img-fluid lazy"
+                            style="border-radius: 50%"
+                          />ZKML<label class="form-control country-money-field"
+                            >5x</label
+                          ></a
+                        >
+                      </li>
+
+                      <!--PHYSICS-->
+                      <li onclick="updateHeadingAndVariable('phy5x')">
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./phy.jpg"
+                            alt="t-logo"
+                            class="img-fluid lazy"
+                            style="border-radius: 50%"
+                          />PHYSICS<label
+                            class="form-control country-money-field"
+                            >5x</label
+                          ></a
+                        >
+                      </li>
+                      <li onclick="updateHeadingAndVariable('phy10x')">
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./phy.jpg"
+                            alt="t-logo"
+                            class="img-fluid lazy"
+                            style="border-radius: 50%"
+                          />
+                          PHYSICS<label class="form-control country-money-field"
+                            >10x</label
+                          ></a
+                        >
+                      </li>
+
+                      <!--VOLT INU-->
+                      <li onclick="updateHeadingAndVariable('volt5x')">
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./volt.jpg"
+                            alt="t-logo"
+                            class="img-fluid lazy"
+                            style="border-radius: 50%"
+                          />VOLT INU<label
+                            class="form-control country-money-field"
+                            >5x</label
+                          ></a
+                        >
+                      </li>
+                      <li onclick="updateHeadingAndVariable('volt10x')">
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./volt.jpg"
+                            alt="t-logo"
+                            class="img-fluid lazy"
+                            style="border-radius: 50%"
+                          />
+                          VOLT INU<label
+                            class="form-control country-money-field"
+                            >10x</label
+                          ></a
+                        >
+                      </li>
+
+                      <!--SHIELD-->
+                      <li onclick="updateHeadingAndVariable('shield5x')">
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./shield.jpg"
+                            alt="t-logo"
+                            class="img-fluid lazy"
+                            style="border-radius: 50%"
+                          />SHIELD<label
+                            class="form-control country-money-field"
+                            >5x</label
+                          ></a
+                        >
+                      </li>
+                      <li onclick="updateHeadingAndVariable('shield10x')">
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./shield.jpg"
+                            alt="t-logo"
+                            class="img-fluid lazy"
+                            style="border-radius: 50%"
+                          />
+                          SHIELD<label class="form-control country-money-field"
+                            >10x</label
+                          ></a
+                        >
+                      </li>
+
+                      <!--TRUMP
+										
+										<li onclick="updateHeadingAndVariable('trump5x')"><a class="dropdown-item"
+												href="#"><img src="./trump.jpg" alt="t-logo" class="img-fluid lazy"
+													style="border-radius: 50%;"> TRUMP <label
+													class="form-control country-money-field">5x</label></a></li>
+										<li onclick="updateHeadingAndVariable('trump10x')"><a class="dropdown-item"
+												href="#"><img src="./trump.jpg" alt="t-logo" class="img-fluid lazy"
+													style="border-radius: 50%;"> TRUMP <label
+													class="form-control country-money-field">10x</label></a></li>
+										<li onclick="updateHeadingAndVariable('trump20x')"><a class="dropdown-item"
+												href="#"><img src="./trump.jpg" alt="t-logo" class="img-fluid lazy"
+													style="border-radius: 50%;"> TRUMP <label
+													class="form-control country-money-field">20x</label></a></li>
+										-->
+                    </ul>
+                  </div>
+                </div>
+                <div class="block-title total-amount-number text-39ff14">
+                  <span id="prUSD"></span>
+                </div>
+              </div>
+              <div class="live-streaming-block streaming-amount-block">
+                <div class="block-title">
+                  <h2 id="balance"><span>Liquidity</span></h2>
+                </div>
+              </div>
+              <div class="live-streaming-block leverage-value-block">
+                <div class="block-title">
+                  <h2>
+                    Leverage : <span class="text-39ff14" id="levmul"></span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- live-streaming -->
+
+      <!-- chart-long-short-selling -->
+      <div class="chart-long-short-selling-section">
+        <div class="container-fluid">
+          <div class="chart-long-short-selling-description">
+            <div class="chart-main-block">
+              <div class="tradingview-widget-container">
+                <!-- <div id="tradingview_74e27" class="tradingview-char-widget"></div> -->
+                <div id="dexscreener-embed">
+                  <iframe id="de" src=""></iframe>
+                  <!-- <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div> -->
+                </div>
+
+                <div class="trade-position-block">
+                  <ul>
+                    <li><a href="/" id="tlink">Trade</a></li>
+                    <li><a href="/leverage-info">Open Positions</a></li>
+                    <li><span class="levarage-marker" id="ldis2"></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="long-short-selling-block">
+              <div class="open-position">
+                <div class="block-title">
+                  <div id="toast" class="toast">
+                    <div class="icon">&#10060;</div>
+                    <p id="toast-message"></p>
+                  </div>
+                </div>
+
+                <form>
+                  <div class="form-group">
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder=""
+                      id="heading2"
+                    />
+                    <div class="leverage-btn" id="ldis3"></div>
+                  </div>
+                </form>
+
+                <div class="leverage-list">
+                  <div class="row">
+                    <div class="col-sm-6 col-6 col-md-4 col-lg-4">
+                      <div class="leverage-block">
+                        <p>Without Leverage</p>
+                        <span
+                          class="text-024AF9"
+                          id="displayWithoutLeverage"
+                        ></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-6 col-md-4 col-lg-4">
+                      <div class="leverage-block">
+                        <p>With Leverage</p>
+                        <span id="displayWithLeverage"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-6 col-md-4 col-lg-4">
+                      <div class="leverage-block">
+                        <p>Profit/Loss</p>
+                        <span id="profitperc"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    This is your total amount that you will get upon exiting
+                    position (Amount Is Shown Including Initials)
+                  </p>
+                  <br />
+                  <button
+                    class="btn btn-parrot"
+                    onclick="exitpos()"
+                    type="button"
+                  >
+                    EXIT POSITION
+                  </button>
+
+                  <a
+                    class="btn btn-primary"
+                    href="#"
+                    style="margin: 10px; color: black"
+                    id="sharepos"
+                    >SHARE</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- chart-long-short-selling -->
+
+      <!-- how-it-work -->
+      <div class="how-it-work-section">
+        <div class="container-fluid">
+          <div class="how-it-work-description">
+            <div class="how-it-work-content">
+              <div class="block-title">
+                <h2>How does it Work ?</h2>
+              </div>
+              <div class="how-it-work-detail">
+                <div class="detail">
+                  <p>
+                    The Leverage Optelion AI allows users to enter long or short
+                    positions on a Uniswap trading pair. Users can specify their
+                    position type and trade amount. The contract calculates
+                    position values based on the current token price. When
+                    exiting, profits or losses are adjusted using leverage. Long
+                    positions profit from price increases, while short positions
+                    profit from price decreases. The contract provides
+                    flexibility in position types and leveraged gains, enhancing
+                    trading strategies within a decentralized environment.
+                  </p>
+                  <a
+                    href="https://gitbook.inteliai.org"
+                    style="color: rgb(1, 255, 60)"
+                    onmousedown="this.style.color='darkgreen';"
+                    onmouseup="this.style.color='green';"
+                    onmouseout="this.style.color='green';"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- how-it-work -->
+    </div>
+    <!-- content end -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- real-time-trading-chart -->
+    <script
+      type="text/javascript"
+      src="https://s3.tradingview.com/tv.js"
+    ></script>
+    <!-- lazyload -->
+    <script src="js/lazyload.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+    <!-- ofi -->
+    <script src="js/ofi.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"
+      integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Initialize web3
+      let contract;
+      let account;
+      let chartaddr;
+      let jsVariable;
+
+      function updateHeadingAndVariable(value) {
+        var heading = document.getElementById("myHeading");
+        var levmuld = document.getElementById("levmul");
+        var image = document.getElementById("myImage");
+
+        var levmuli;
+        var coin;
+
+        switch (value) {
+          //optimus
+          case "MEOW10x":
+            jsVariable = "0x66407217C39840A6E8FCe17e8B10fA310454D471";
+            coin = "喵喵喵喵喵";
+            levmuli = "10X";
+            chartaddr = "0x190570d9a38df7988721d0cfc58c248679a6df3e";
+            image.src = "./meow.jpg";
+            break;
+          case "MEOW5x":
+            jsVariable = "0x4751C3FD3BD8505178e5Ddd7590328d6fDA9CF9b";
+            coin = "喵喵喵喵喵";
+            levmuli = "5X";
+            chartaddr = "0x190570d9a38df7988721d0cfc58c248679a6df3e";
+            image.src = "./meow.jpg";
+            break;
+          //default: jsVariable = 0;
+
+          //paal
+          case "trump5x":
+            jsVariable = "0xf43308b8C4eE18769d91b3E8082d6299BbC7E5Ce";
+            coin = "TRUMP";
+            levmuli = "5X";
+            chartaddr = "0xe4b8583ccb95b25737c016ac88e539d0605949e8";
+            image.src = "./trump.jpg";
+            break;
+          case "trump10x":
+            jsVariable = "0x705e25fd065805340E11CE89D30c197887ec92f5";
+            coin = "TRUMP";
+            levmuli = "10X";
+            chartaddr = "0xe4b8583ccb95b25737c016ac88e539d0605949e8";
+            image.src = "./trump.jpg";
+            break;
+          case "trump20x":
+            jsVariable = "0xaDCfCE3fd5331761A0e598AB80f77264CFE28898";
+            coin = "TRUMP";
+            levmuli = "20X";
+            chartaddr = "0xe4b8583ccb95b25737c016ac88e539d0605949e8";
+            image.src = "./trump.jpg";
+            break;
+
+          //shield
+          case "shield10x":
+            jsVariable = "0x5E102c65EF8E5dA25eBe200d220F76db53E43bde";
+            coin = "SHIELD";
+            levmuli = "10X";
+            chartaddr = "0xF5C92780138061a113fd708d4b403E0E830effFf";
+            image.src = "./shield.jpg";
+            break;
+          case "shield5x":
+            jsVariable = "0x9ea0F4a5Fd959b51ecEcA54Ed465628F2D1AD7b3";
+            coin = "SHIELD";
+            levmuli = "5X";
+            chartaddr = "0xF5C92780138061a113fd708d4b403E0E830effFf";
+            image.src = "./shield.jpg";
+            break;
+
+          //volt
+          case "volt10x":
+            jsVariable = "0x34EC2c3e59c8BE81de78A2bB05ed41588253D640";
+            coin = "VOLT INU";
+            levmuli = "10X";
+            chartaddr = "0x96aa22baedc5a605357e0b9ae20ab6b10a472e03";
+            image.src = "./volt.jpg";
+            break;
+          case "volt5x":
+            jsVariable = "0xd00C0200C25949Cb4683C4ae61bc39ed531FD837";
+            coin = "VOLT INU";
+            levmuli = "5X";
+            chartaddr = "0x96aa22baedc5a605357e0b9ae20ab6b10a472e03";
+            image.src = "./volt.jpg";
+            break;
+
+          //zkml
+          case "zkml5x":
+            jsVariable = "0x899ABa0c6D2a05358b9951cACbA6d7251DB2478B";
+            coin = "ZKML";
+            levmuli = "5X";
+            chartaddr = "0x315Ed60258702F8d159b98dF4C0DBEb1D7D776dF";
+            image.src = "./zkml.png";
+            break;
+
+          //physics
+          case "phy5x":
+            jsVariable = "0xb6F837883EF572026800cC64B3b63d4D173B9748";
+            coin = "PHYSICS";
+            levmuli = "5X";
+            chartaddr = "0x8b792310b7aae9822fdfdc5ad99a7e8d46eeb6ef";
+            image.src = "./phy.jpg";
+            break;
+          case "phy10x":
+            jsVariable = "0x848f068872F49Fc6d6630ea688cfB6296836271A";
+            coin = "PHYSICS";
+            levmuli = "10X";
+            chartaddr = "0x8b792310b7aae9822fdfdc5ad99a7e8d46eeb6ef";
+            image.src = "./phy.jpg";
+            break;
+        }
+
+        heading.innerHTML = coin;
+        document.getElementById("heading2").placeholder = coin;
+        levmuld.innerHTML = levmuli;
+        document.getElementById("ldis2").innerHTML = levmuli + " LEVERAGE";
+        document.getElementById("ldis3").innerHTML = levmuli + " LEVERAGE";
+        console.log(jsVariable);
+        updateprice();
+        document.getElementById("de").src =
+          "https://dexscreener.com/ethereum/" +
+          chartaddr +
+          "?embed=1&theme=dark&trades=0";
+        connectWallet();
+        document.getElementById("tlink").href = "index.html?v=" + value;
+      }
+
+      function updateprice() {
+        fetch("https://api.dexscreener.com/latest/dex/search/?q=" + chartaddr)
+          .then((response) => response.json())
+          .then((data) => {
+            if (data.pairs && data.pairs.length > 0) {
+              let priceUsd = data.pairs[0].priceUsd;
+              if (priceUsd) {
+                document.getElementById("prUSD").innerText = "$" + priceUsd;
+              } else {
+                console.error("Price in USD not found in the response");
+              }
+            } else {
+              console.error("Pairs not found in the response");
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching the data:", error);
+          });
+      }
+
+      async function processUrlParameter() {
+        const params = new URLSearchParams(window.location.search);
+        const v = params.get("v"); // Gets the value of the 'v' parameter
+
+        if (v) {
+          console.log(v, typeof v);
+          await updateHeadingAndVariable(v);
+        } else {
+          console.log("No parameter found.");
+          updateHeadingAndVariable("volt5x");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        processUrlParameter();
+      });
+
+      function initializeContract() {
+        const contractAddress = jsVariable;
+        const abi = [
+          {
+            inputs: [],
+            name: "addFunds",
+            outputs: [],
+            stateMutability: "payable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "bool",
+                name: "_isLong",
+                type: "bool",
+              },
+            ],
+            name: "enterPosition",
+            outputs: [],
+            stateMutability: "payable",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "exitPosition",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "userAddress",
+                type: "address",
+              },
+            ],
+            name: "ownerExitPosition",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "_uniswapPair",
+                type: "address",
+              },
+              {
+                internalType: "uint256",
+                name: "_leverageMultiplier",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "_minAmount",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "_maxAmount",
+                type: "uint256",
+              },
+            ],
+            stateMutability: "nonpayable",
+            type: "constructor",
+          },
+          {
+            inputs: [],
+            name: "ReentrancyGuardReentrantCall",
+            type: "error",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "userAddress",
+                type: "address",
+              },
+            ],
+            name: "removePositionFor",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "uint256",
+                name: "_minAmount",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "_maxAmount",
+                type: "uint256",
+              },
+            ],
+            name: "setTradeLimits",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "uint256",
+                name: "amount",
+                type: "uint256",
+              },
+            ],
+            name: "withdrawFunds",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            stateMutability: "payable",
+            type: "receive",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "userAddress",
+                type: "address",
+              },
+            ],
+            name: "getProjectedPnL",
+            outputs: [
+              {
+                internalType: "uint256",
+                name: "profitWithLeverage",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "profitWithoutLeverage",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "lossWithLeverage",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "lossWithoutLeverage",
+                type: "uint256",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "getTokenPrice",
+            outputs: [
+              {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "leverageMultiplier",
+            outputs: [
+              {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "maxAmount",
+            outputs: [
+              {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "minAmount",
+            outputs: [
+              {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "owner",
+            outputs: [
+              {
+                internalType: "address",
+                name: "",
+                type: "address",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "address",
+                name: "",
+                type: "address",
+              },
+            ],
+            name: "positions",
+            outputs: [
+              {
+                internalType: "uint256",
+                name: "ethAmount",
+                type: "uint256",
+              },
+              {
+                internalType: "uint256",
+                name: "baseTokenAmount",
+                type: "uint256",
+              },
+              {
+                internalType: "bool",
+                name: "isLong",
+                type: "bool",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [],
+            name: "uniswapPair",
+            outputs: [
+              {
+                internalType: "contract IUniswapV2Pair",
+                name: "",
+                type: "address",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+        ];
+        contract = new web3.eth.Contract(abi, contractAddress);
+        web3.eth.getBalance(contractAddress, (err, balance) => {
+          // Convert Wei to Ether
+          balance = web3.utils.fromWei(balance, "ether");
+          balance = parseFloat(balance).toFixed(2);
+          console.log(balance);
+          document.getElementById("balance").innerHTML =
+            balance + " ETH" + " <span>Liquidity</span>";
+        });
+      }
+
+      async function connectWallet() {
+        if (window.ethereum) {
+          window.web3 = new Web3(ethereum);
+          try {
+            // Request account access
+            await ethereum.enable();
+            initializeContract(); // Initialize the contract after enabling Ethereum
+            displayConnectedAccount();
+          } catch (error) {
+            console.error("User denied account access");
+          }
+        }
+        // Legacy dapp browsers...
+        else if (window.web3) {
+          window.web3 = new Web3(web3.currentProvider);
+          initializeContract(); // Initialize the contract for legacy dapp browsers
+          displayConnectedAccount();
+        }
+        // Non-dapp browsers...
+        else {
+          alert("Non-Ethereum browser detected. Consider trying out MetaMask!");
+        }
+      }
+      async function displayConnectedAccount() {
+        const accounts = await web3.eth.getAccounts();
+        if (accounts.length === 0) {
+          document.getElementById("connectedAccount").innerText = "retry";
+        } else {
+          let accountAddress = accounts[0];
+          if (accountAddress && typeof accountAddress === "string") {
+            const shortAddress = accountAddress.slice(0, 11) + "...";
+            document.getElementById("connectedAccount").innerText =
+              shortAddress;
+            //await displayProfitLossProjections(accountAddress);
+            await displayProfitLossProjections(accountAddress);
+          } else {
+            document.getElementById("connectedAccount").innerText = "invalid";
+          }
+        }
+        account = accounts[0];
+      }
+
+      function showToast(message) {
+        const toast = document.getElementById("toast");
+        const toastMessage = document.getElementById("toast-message");
+        toastMessage.innerText = message;
+        toast.className = "toast show";
+        document.getElementById("displayWithLeverage").innerText = "";
+        document.getElementById("displayWithoutLeverage").innerText = "";
+        document.getElementById("profitperc").innerText = "";
+
+        setTimeout(function () {
+          toast.className = toast.className.replace("show", "");
+        }, 3000);
+      }
+
+      async function displayProfitLossProjections(account) {
+        if (!contract) {
+          showToast("Contract not initialized. Connect wallet first.");
+          return;
+        }
+
+        try {
+          const result = await contract.methods
+            .getProjectedPnL(account)
+            .call({ from: account });
+          const upos = await contract.methods
+            .positions(account)
+            .call({ from: account });
+          var uposs = parseFloat(web3.utils.fromWei(upos[0], "ether"));
+
+          const profitWithLeverage = parseFloat(
+            web3.utils.fromWei(result[0], "ether")
+          );
+          const profitWithoutLeverage = parseFloat(
+            web3.utils.fromWei(result[1], "ether")
+          );
+          const lossWithLeverage = parseFloat(
+            web3.utils.fromWei(result[2], "ether")
+          );
+          const lossWithoutLeverage = parseFloat(
+            web3.utils.fromWei(result[3], "ether")
+          );
+
+          var pnlo;
+          if (profitWithLeverage > lossWithLeverage) {
+            pnlo = profitWithLeverage;
+          } else {
+            pnlo = lossWithLeverage;
+          }
+
+          var profit = (await pnlo) - (await uposs);
+          var prp = ((await profit) / (await uposs)) * 100;
+          console.log(
+            await prp,
+            await profitWithLeverage,
+            await lossWithLeverage
+          );
+
+          const isProfitWithLeverage = profitWithLeverage > lossWithLeverage;
+          const isProfitWithoutLeverage =
+            profitWithoutLeverage > lossWithoutLeverage;
+
+          const displayWithLeverage = isProfitWithLeverage
+            ? `${profitWithLeverage.toFixed(6)}`
+            : `${lossWithLeverage.toFixed(6)}`;
+
+          const displayWithoutLeverage = isProfitWithoutLeverage
+            ? `${profitWithoutLeverage.toFixed(6)}`
+            : `${lossWithoutLeverage.toFixed(6)}`;
+
+          const withLeverageElement = document.getElementById(
+            "displayWithLeverage"
+          );
+          withLeverageElement.innerText = displayWithLeverage;
+          withLeverageElement.style.color = isProfitWithLeverage
+            ? "#07f73f"
+            : "#f70707"; // updated colors
+
+          const withoutLeverageElement = document.getElementById(
+            "displayWithoutLeverage"
+          );
+          withoutLeverageElement.innerText = displayWithoutLeverage;
+          withoutLeverageElement.style.color = isProfitWithoutLeverage
+            ? "#07f73f"
+            : "#f70707";
+
+          const pnlElement = document.getElementById("profitperc");
+          pnlElement.innerText = prp.toFixed(2) + "%";
+          pnlElement.style.color = isProfitWithLeverage ? "#07f73f" : "#f70707";
+
+          // updated colors
+          var posisl;
+          if (upos["isLong"]) {
+            posisl = "LONG";
+          } else {
+            posisl = "SHORT";
+          }
+
+          var heading = document.getElementById("myHeading").innerText;
+          var levmuld = document.getElementById("levmul").innerText;
+          document.getElementById("sharepos").href =
+            "https://share.leveragetechnology.io/?amount=" +
+            prp.toFixed(2) +
+            "&value=" +
+            displayWithLeverage +
+            "&lev=" +
+            levmuld +
+            "&asset=" +
+            heading +
+            "&position=" +
+            posisl;
+        } catch (error) {
+          showToast("No Position Found");
+        }
+      }
+      async function exitpos() {
+        const accounts = await web3.eth.getAccounts();
+        contract.methods.exitPosition().send({ from: accounts[0] });
+      }
+
+      connectWallet();
+    </script>
+  </body>
+</html>

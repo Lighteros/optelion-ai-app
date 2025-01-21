@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "fabrands400";
+  src: url("fabrands400.eot");
+  src: url("fabrands400.eot") format("embedded-opentype"),
+    url("fabrands400.woff2") format("woff2"),
+    url("fabrands400.woff") format("woff"),
+    url("fabrands400.ttf") format("truetype"),
+    url("fabrands400.svg#fabrands400") format("svg");
+}
+
+@font-face {
+  font-family: "faregular400";
+  src: url("faregular400.eot");
+  src: url("faregular400.eot") format("embedded-opentype"),
+    url("faregular400.woff2") format("woff2"),
+    url("faregular400.woff") format("woff"),
+    url("faregular400.ttf") format("truetype"),
+    url("faregular400.svg#faregular400") format("svg");
+}
+
+@font-face {
+  font-family: "fasolid900";
+  src: url("fasolid900.eot");
+  src: url("fasolid900.eot") format("embedded-opentype"),
+    url("fasolid900.woff2") format("woff2"),
+    url("fasolid900.woff") format("woff"),
+    url("fasolid900.ttf") format("truetype"),
+    url("fasolid900.svg#fasolid900") format("svg");
+}
+
+@font-face {
+  font-family: "fav4compatibility";
+  src: url("fav4compatibility.eot");
+  src: url("fav4compatibility.eot") format("embedded-opentype"),
+    url("fav4compatibility.woff2") format("woff2"),
+    url("fav4compatibility.woff") format("woff"),
+    url("fav4compatibility.ttf") format("truetype"),
+    url("fav4compatibility.svg#fav4compatibility") format("svg");
+}
+
+@font-face {
+  font-family: "FontAwesome6BrandsRegular400";
+  src: url("FontAwesome6BrandsRegular400.eot");
+  src: url("FontAwesome6BrandsRegular400.eot") format("embedded-opentype"),
+    url("FontAwesome6BrandsRegular400.woff2") format("woff2"),
+    url("FontAwesome6BrandsRegular400.woff") format("woff"),
+    url("FontAwesome6BrandsRegular400.ttf") format("truetype"),
+    url("FontAwesome6BrandsRegular400.svg#FontAwesome6BrandsRegular400")
+      format("svg");
+}
+
+@font-face {
+  font-family: "FontAwesome6FreeRegular400";
+  src: url("FontAwesome6FreeRegular400.eot");
+  src: url("FontAwesome6FreeRegular400.eot") format("embedded-opentype"),
+    url("FontAwesome6FreeRegular400.woff2") format("woff2"),
+    url("FontAwesome6FreeRegular400.woff") format("woff"),
+    url("FontAwesome6FreeRegular400.ttf") format("truetype"),
+    url("FontAwesome6FreeRegular400.svg#FontAwesome6FreeRegular400")
+      format("svg");
+}
+
+@font-face {
+  font-family: "FontAwesome6FreeSolid900";
+  src: url("FontAwesome6FreeSolid900.eot");
+  src: url("FontAwesome6FreeSolid900.eot") format("embedded-opentype"),
+    url("FontAwesome6FreeSolid900.woff2") format("woff2"),
+    url("FontAwesome6FreeSolid900.woff") format("woff"),
+    url("FontAwesome6FreeSolid900.ttf") format("truetype"),
+    url("FontAwesome6FreeSolid900.svg#FontAwesome6FreeSolid900") format("svg");
+}
+
+@font-face {
+  font-family: "GeneralSansExtralight";
+  src: url("GeneralSansExtralight.eot");
+  src: url("GeneralSansExtralight.eot") format("embedded-opentype"),
+    url("GeneralSansExtralight.woff2") format("woff2"),
+    url("GeneralSansExtralight.woff") format("woff"),
+    url("GeneralSansExtralight.ttf") format("truetype"),
+    url("GeneralSansExtralight.svg#GeneralSansExtralight") format("svg");
+}
+
+@font-face {
+  font-family: "GeneralSansLight";
+  src: url("GeneralSansLight.eot");
+  src: url("GeneralSansLight.eot") format("embedded-opentype"),
+    url("GeneralSansLight.woff2") format("woff2"),
+    url("GeneralSansLight.woff") format("woff"),
+    url("GeneralSansLight.ttf") format("truetype"),
+    url("GeneralSansLight.svg#GeneralSansLight") format("svg");
+}
+
+@font-face {
+  font-family: "GeneralSansRegular";
+  src: url("GeneralSansRegular.eot");
+  src: url("GeneralSansRegular.eot") format("embedded-opentype"),
+    url("GeneralSansRegular.woff2") format("woff2"),
+    url("GeneralSansRegular.woff") format("woff"),
+    url("GeneralSansRegular.ttf") format("truetype"),
+    url("GeneralSansRegular.svg#GeneralSansRegular") format("svg");
+}
+
+@font-face {
+  font-family: "GeneralSansMedium";
+  src: url("GeneralSansMedium.eot");
+  src: url("GeneralSansMedium.eot") format("embedded-opentype"),
+    url("GeneralSansMedium.woff2") format("woff2"),
+    url("GeneralSansMedium.woff") format("woff"),
+    url("GeneralSansMedium.ttf") format("truetype"),
+    url("GeneralSansMedium.svg#GeneralSansMedium") format("svg");
+}
+
+@font-face {
+  font-family: "GeneralSansSemibold";
+  src: url("GeneralSansSemibold.eot");
+  src: url("GeneralSansSemibold.eot") format("embedded-opentype"),
+    url("GeneralSansSemibold.woff2") format("woff2"),
+    url("GeneralSansSemibold.woff") format("woff"),
+    url("GeneralSansSemibold.ttf") format("truetype"),
+    url("GeneralSansSemibold.svg#GeneralSansSemibold") format("svg");
+}
+
+@font-face {
+  font-family: "GeneralSansBold";
+  src: url("GeneralSansBold.eot");
+  src: url("GeneralSansBold.eot") format("embedded-opentype"),
+    url("GeneralSansBold.woff2") format("woff2"),
+    url("GeneralSansBold.woff") format("woff"),
+    url("GeneralSansBold.ttf") format("truetype"),
+    url("GeneralSansBold.svg#GeneralSansBold") format("svg");
+}
+
+@font-face {
+  font-family: "OrbitronBold";
+  src: url("OrbitronBold.eot");
+  src: url("OrbitronBold.eot") format("embedded-opentype"),
+    url("OrbitronBold.woff2") format("woff2"),
+    url("OrbitronBold.woff") format("woff"),
+    url("OrbitronBold.ttf") format("truetype"),
+    url("OrbitronBold.svg#OrbitronBold") format("svg");
+}
+
+@font-face {
+  font-family: "OrbitronExtraBold";
+  src: url("OrbitronExtraBold.eot");
+  src: url("OrbitronExtraBold.eot") format("embedded-opentype"),
+    url("OrbitronExtraBold.woff2") format("woff2"),
+    url("OrbitronExtraBold.woff") format("woff"),
+    url("OrbitronExtraBold.ttf") format("truetype"),
+    url("OrbitronExtraBold.svg#OrbitronExtraBold") format("svg");
+}
